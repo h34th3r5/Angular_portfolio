@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -33,7 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule, 
     MatCheckboxModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

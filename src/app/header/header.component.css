@@ -1,0 +1,21 @@
+
+
+.profile-img {
+    width: 100%;
+    margin: 2em 1em;
+}
+
+.navbar {
+    background: url(s3://heather-stump-design/sig.gif) no-repeat;
+    background-color: black;
+    color: white;
+    font-size: 18pt;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.nav-link {
+ margin: .5em;
+}

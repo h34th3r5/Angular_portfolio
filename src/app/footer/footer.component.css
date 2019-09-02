@@ -8,6 +8,10 @@ body {
     flex: 1 0 auto;
   }
 
+  .footer {
+    background-color: black;
+  }
+
 a {
  padding: 0 1em;
 }
@@ -15,5 +19,79 @@ a {
   li {
       list-style: none;
   }
+
+.bottom-photo {
+  border-radius: 5px 75px 5px;
+  padding: 1em;
+  margin-left: 2em;
+  box-shadow: 0 0 20px #DB7093;
+  width: 75%;
+}
+
+.text-muted {
+  font-size: 19pt;
+  margin-top: .5em;
+  text-transform: uppercase;
+  padding-left: 0;
+}
+
+ul h5 {
+  font-size: 30pt;
+  color: white;
+}
+
+ul {
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  padding-left: 0;
+}
+
+.social {
+  width: 80%;
+}
+
+li .social {
+  padding-right: 0;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #C71585;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
 
   
