@@ -1,15 +1,12 @@
 
 
-.profile-img {
-    width: 100%;
-    margin: 2em 1em;
-}
-
 .navbar {
-    background: url(s3://heather-stump-design/sig.gif) no-repeat;
+    background: url(src/assets/fade-banner.png) no-repeat;
+    background-size: 100% 100%;
     background-color: black;
-    color: white;
+    color: black;
     font-size: 18pt;
+  
 }
 
 .dropdown-item {
@@ -18,4 +15,11 @@
 
 .nav-link {
  margin: .5em;
+}
+
+.navbar .material-icons {
+    color: white;
+    background-color: black;
+    font-size: 36pt;
+    background: none;
 }

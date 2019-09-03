@@ -21,22 +21,18 @@ a {
   }
 
 .bottom-photo {
-  border-radius: 5px 75px 5px;
-  padding: 1em;
-  margin-left: 2em;
-  box-shadow: 0 0 20px #DB7093;
   width: 75%;
 }
 
 .text-muted {
-  font-size: 19pt;
+  font-size: 14pt;
   margin-top: .5em;
   text-transform: uppercase;
   padding-left: 0;
 }
 
 ul h5 {
-  font-size: 30pt;
+  font-size: 24pt;
   color: white;
 }
 
@@ -53,7 +49,8 @@ li {
 }
 
 .social {
-  width: 80%;
+  width: 10%;
+  padding-top: .5em;
 }
 
 li .social {
@@ -61,6 +58,10 @@ li .social {
 }
 
 .navbar-toggler-icon {
+  color: white;
+}
+
+.copyright {
   color: white;
 }
 
