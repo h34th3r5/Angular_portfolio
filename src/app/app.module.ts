@@ -12,10 +12,12 @@ import { AppComponent } from './app.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes = [
-  { path: 'contact', component: ContactPageComponent }
+  { path: 'contact', component: ContactPageComponent },
+  { path: 'home', component: HomeComponent}
 ]
 
 
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     AppComponent,
     ContactPageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
