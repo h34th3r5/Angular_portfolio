@@ -1,41 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
-import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 
-
-
-
+const appRoutes: Routes = [
+  { path: 'contact', component: ContactPageComponent }
+]
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents,
     ContactPageComponent,
     HeaderComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule, 
-    MatCheckboxModule,
-    AppRoutingModule,
     NgbModule,
-    FontAwesomeModule 
+    FontAwesomeModule,
+    RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'})
   ],
   providers: [],
   bootstrap: [AppComponent]
