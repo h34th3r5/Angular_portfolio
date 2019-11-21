@@ -13,11 +13,19 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { StaticDesignComponent } from './static-design/static-design.component';
+import { AboutComponent } from './about/about.component';
+import { WebDevComponent } from './web-dev/web-dev.component';
+import { ResumeComponent } from './resume/resume.component';
 
 
 const appRoutes: Routes = [
   { path: 'contact', component: ContactPageComponent },
-  { path: 'home', component: HomeComponent}
+  { path: 'home', component: HomeComponent},
+  { path: 'about', component: AboutComponent},
+  { path: 'static-design', component: StaticDesignComponent},
+  { path: 'web-design', component: WebDevComponent},
+  { path: 'resume', component: ResumeComponent}
 ]
 
 
@@ -27,7 +35,11 @@ const appRoutes: Routes = [
     ContactPageComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    StaticDesignComponent,
+    AboutComponent,
+    WebDevComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
