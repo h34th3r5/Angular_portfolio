@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
+import { faInstagram, faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -9,7 +10,23 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  faInstagram = faInstagram;
+  faFacebookSquare = faFacebookSquare;
+  faTwitter = faTwitter;
+
+  collapsed = true;
+
+  constructor(config: NgbDropdownConfig) {
+    config.autoClose = true;
+  }
+
+  closeNav() {
+    const isMobile = /iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      return this.collapsed = true;
+    }
+}
+
 
   ngOnInit() {
   }
