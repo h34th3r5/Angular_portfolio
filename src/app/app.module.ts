@@ -5,6 +5,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { TeximateModule } from 'ngx-teximate';
+
 
 
 
@@ -25,8 +27,9 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'static-design', component: StaticDesignComponent},
   { path: 'web-design', component: WebDevComponent},
-  { path: 'resume', component: ResumeComponent}
-]
+  { path: 'resume', component: ResumeComponent},
+  { path: '**', redirectTo: 'home' }
+];
 
 
 @NgModule({
@@ -47,7 +50,8 @@ const appRoutes: Routes = [
     NgbModule,
     FontAwesomeModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'}),
-    HttpClientModule
+    HttpClientModule,
+    TeximateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

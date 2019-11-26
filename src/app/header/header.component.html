@@ -6,8 +6,7 @@
         <button 
         class="navbar-toggler border-0" 
         type="button" 
-        (click)="collapsed = !collapsed" 
-        [attr.aria-expanded]="!collapsed"
+        
         aria-controls="toggleNav" 
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,26 +19,26 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item px-2">
-          <a class="nav-link hvr-underline-from-left" routerLink="static-design">Static Design Work
+          <a class="nav-link hvr-underline-from-center" routerLink="static-design">Static Design Work
               </a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link hvr-underline-from-left" routerLink="web-design">Web Design & Development</a>
+          <a class="nav-link hvr-underline-from-center" routerLink="web-design">Web Design & Development</a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link hvr-underline-from-left" href="#">Resume</a>
+          <a class="nav-link hvr-underline-from-center" href="#">Resume</a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link hvr-underline-from-left" routerLink="contact">Contact</a>
+          <a class="nav-link hvr-underline-from-center" routerLink="contact">Contact</a>
         </li>
         <li>
-          <a class="nav-link hvr-underline-from-left" href="https://www.instagram.com/heather_stump_art/" (click)="closeNav()" target="_blank"><fa-icon [icon]="faInstagram"></fa-icon></a>
+          <a class="nav-link icon" href="https://www.instagram.com/heather_stump_art/" (click)="closeNav()" target="_blank"><fa-icon [icon]="faInstagram"></fa-icon></a>
         </li>
         <li>
-          <a class="nav-link hvr-underline-from-left" href="https://www.facebook.com/heatherstumpdesigns/" (click)="closeNav()" target="_blank"><fa-icon [icon]="faFacebookSquare"></fa-icon></a>
+          <a class="nav-link  icon" href="https://www.facebook.com/heatherstumpdesigns/" (click)="closeNav()" target="_blank"><fa-icon [icon]="faFacebookSquare"></fa-icon></a>
         </li>
         <li>
-          <a class="nav-link hvr-underline-from-left" href="https://twitter.com/heatherStumpArt" (click)="closeNav()" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a>
+          <a class="nav-link icon" href="https://twitter.com/heatherStumpArt" (click)="closeNav()" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a>
         </li>
       </ul>
     </div>
