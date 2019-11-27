@@ -1,27 +1,25 @@
 <div class="container"></div>
 
 <div class="row"> 
-    <div class="col-12">
+    <div class="col-6">
         <h1 class="pt-5 first hvr-float"><span>STATIC</span>DESIGN</h1>
         <h1 class="first hvr-float"><span>WEB</span>DESIGN</h1>
         <H1 class="first hvr-float">RESUME</H1>
-        <H1 class="first hvr-float ml-4">CONTACT</H1>
+        <H1 class="first hvr-float">CONTACT</H1>
+    </div>
+
+    <div class="col-12 ml-2">
+        <h2 [innerHTML]='socialName'></h2>
     </div>
     
 
-    <div class="col-12 col-md-6"> 
-        <h2><teximate [text]="text" [enter]="enterAnimation"></teximate></h2>
-    </div>
-    
-    
-    <div class="col-12 d-flex flex-row">
-                <a class="nav-link icon" href="https://www.instagram.com/heather_stump_art/" (click)="closeNav()" target="_blank"><fa-icon [icon]="faInstagram"></fa-icon></a>
+    <div class=" col-12 d-flex flex-row">
+            <a class="px-3" href="https://www.instagram.com/heather_stump_art/" (mouseover)="socialName='instagram'"  (mouseout)="socialName='social'" target="_blank"  title="instagram" alt="Instagram" ><fa-icon [icon]="faInstagram"></fa-icon></a>
               
-                <a class="nav-link  icon" href="https://www.facebook.com/heatherstumpdesigns/" (click)="closeNav()" target="_blank"><fa-icon [icon]="faFacebookSquare"></fa-icon></a>
-            
-                <a class="nav-link icon" href="https://twitter.com/heatherStumpArt" (click)="closeNav()" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a>
-
-    </div> 
-
+            <a class="px-3" href="https://www.facebook.com/heatherstumpdesigns/" (mouseover)="socialName='facebook'"  (mouseout)="socialName='social'"target="_blank" title="facebook" alt="Facebook"><fa-icon [icon]="faFacebookSquare"></fa-icon></a>
+        
+            <a class="px-3" href="https://twitter.com/heatherStumpArt" (mouseover)="socialName='twitter'"  (mouseout)="socialName='social'"target="_blank" title="twitter" alt="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
+    </div>            
+    
 </div>
 

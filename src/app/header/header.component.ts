@@ -3,12 +3,15 @@ import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
 import { faInstagram, faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+
 
   faInstagram = faInstagram;
   faFacebookSquare = faFacebookSquare;
@@ -30,7 +33,4 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
-
-

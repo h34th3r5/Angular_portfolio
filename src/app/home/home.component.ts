@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { faInstagram, faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { TextAnimation } from 'ngx-teximate';
-import { fadeInDown } from 'ng-animate';
-
 
 
 @Component({
@@ -12,14 +9,7 @@ import { fadeInDown } from 'ng-animate';
 })
 export class HomeComponent implements OnInit {
 
-  text = 'social';
-
-  enterAnimation: TextAnimation = {
-    animation: fadeInDown,
-    delay: 50,
-    type: 'letter'
-  };
-
+  socialName = 'social';
   faInstagram = faInstagram;
   faFacebookSquare = faFacebookSquare;
   faTwitter = faTwitter;
@@ -29,3 +19,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 }
+
+
+
+

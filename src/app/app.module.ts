@@ -6,7 +6,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
-
+import { anime } from 'animejs/lib/anime.es.js';
 
 
 
@@ -51,7 +51,8 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'}),
     HttpClientModule,
-    TeximateModule
+    TeximateModule,
+    anime
   ],
   providers: [],
   bootstrap: [AppComponent]
