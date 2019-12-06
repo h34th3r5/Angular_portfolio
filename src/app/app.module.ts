@@ -6,7 +6,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
-import { anime } from 'animejs/lib/anime.es.js';
 
 
 
@@ -16,7 +15,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { StaticDesignComponent } from './static-design/static-design.component';
-import { AboutComponent } from './about/about.component';
 import { WebDevComponent } from './web-dev/web-dev.component';
 import { ResumeComponent } from './resume/resume.component';
 
@@ -24,7 +22,6 @@ import { ResumeComponent } from './resume/resume.component';
 const appRoutes: Routes = [
   { path: 'contact', component: ContactPageComponent },
   { path: 'home', component: HomeComponent},
-  { path: 'about', component: AboutComponent},
   { path: 'static-design', component: StaticDesignComponent},
   { path: 'web-design', component: WebDevComponent},
   { path: 'resume', component: ResumeComponent},
@@ -40,7 +37,6 @@ const appRoutes: Routes = [
     FooterComponent,
     HomeComponent,
     StaticDesignComponent,
-    AboutComponent,
     WebDevComponent,
     ResumeComponent
   ],
@@ -51,8 +47,7 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'}),
     HttpClientModule,
-    TeximateModule,
-    anime
+    TeximateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

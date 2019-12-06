@@ -14,5 +14,28 @@
 
 <body>
   <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDtpPmBAgevPrOOaQ1ESkbYl4wAeJmPrcA",
+    authDomain: "heather-stump-art-porfolio.firebaseapp.com",
+    databaseURL: "https://heather-stump-art-porfolio.firebaseio.com",
+    projectId: "heather-stump-art-porfolio",
+    storageBucket: "heather-stump-art-porfolio.appspot.com",
+    messagingSenderId: "731356873095",
+    appId: "1:731356873095:web:f8c6642be311cecc195322",
+    measurementId: "G-JMKP58G4HX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>

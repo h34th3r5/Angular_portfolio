@@ -18,10 +18,10 @@ h1 {
 
 .first {
     opacity: .6;
-    font-size: 6em;
+    font-size: 4em;
     padding-left: .25em;
-}
-
+    padding-right: .25em;
+  }
 .first:hover {
     opacity: 1;
     color: #ccff00;
@@ -59,7 +59,7 @@ h2 {
   }
   
   fa-icon:hover {
-    color: #ff676d;
+    color: #ccff00;
   }
 
 
@@ -70,4 +70,8 @@ h2 {
   li {
     list-style-type: none;
     display: inline;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
