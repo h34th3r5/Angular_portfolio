@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 nav {
   background-color: black !important;
+  margin: 0 auto;
 }
 
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+  margin: 0;
+}
 li {
-    font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
     font-size: 18pt;
+    font-weight: thin;
 }
 
 li a {
@@ -20,7 +25,7 @@ fa-icon {
 }
 
 fa-icon:hover {
-  color: #ff676d;
+  color: #ccff00;
 }
 
 /* Underline From Center */
@@ -40,7 +45,7 @@ fa-icon:hover {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #ff676d;
+  background: #ccff00;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;

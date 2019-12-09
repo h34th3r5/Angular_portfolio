@@ -6,6 +6,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
+import { FormsModule }   from '@angular/forms';
 
 
 
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'}),
     HttpClientModule,
-    TeximateModule
+    TeximateModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

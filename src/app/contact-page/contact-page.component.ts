@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-page',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactPageComponent implements OnInit {
 
+  name: string;
+  email: string;
+  message: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  processForm() {
+    const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
+    alert(allInfo); 
   }
 
 }
