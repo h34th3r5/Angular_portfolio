@@ -9,7 +9,7 @@ import { faInstagram, faFacebookSquare, faTwitter } from '@fortawesome/free-bran
 })
 export class HomeComponent implements OnInit {
 
-  socialName = 'socials:';
+  socialName = 'socials_';
   faInstagram = faInstagram;
   faFacebookSquare = faFacebookSquare;
   faTwitter = faTwitter;

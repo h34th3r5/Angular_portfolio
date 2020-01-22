@@ -46,7 +46,8 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     NgbModule,
     FontAwesomeModule,
-    RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'}),
+    // tslint:disable-next-line: max-line-length
+    RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload', useHash: true}),
     HttpClientModule,
     TeximateModule,
     FormsModule

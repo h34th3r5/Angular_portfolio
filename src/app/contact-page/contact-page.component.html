@@ -1,23 +1,47 @@
+<div class="container">
 <!-- form goes here -->
 
 <app-header></app-header>
-<form>
 
-    <!-- name -->
-    <div class="field">
-      <input type="text" name="name" class="input" placeholder="Hey friend, what's your name?">
-    </div>
+<div class="row">
+
+  <div class="col-12"> 
+    <form class=" contact-fields" (ngSubmit)="processForm()">
+
+      <!-- name -->
+      <div class="help is-error name" *ngIf="nameInput.invalid && nameInput.dirty">
+        Name is required and needs to be at least 3 characters long.
+      </div>
+      <div class="field">
+        <input type="text" name="name" class="input" placeholder="Hey friend, what's your name?" [(ngModel)]="name" required minlength="3" #nameInput="ngModel">
+        
+      </div>
+    
+      <!-- email -->
+      <div class="field">
+        <input type="email" name="email" style="border:3px solid #ccff00; margin-bottom: .5em; padding: 0 .75em;" class="input" placeholder="Your Email" [(ngModel)]="email" required email #emailInput="ngModel">
+        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+          Needs to be a valid email.
+        </div>
+      </div>
+    
+      <!-- message -->
+      <div class="field">
+        <textarea class="textarea" name="message"  placeholder="Spill that tea, fam..." [(ngModel)]="message" required #messageInput="ngModel"></textarea>
+        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+          Your message is required!
+        </div>
+      </div>
+    
+      <button type="submit" class="btn btn-secondary">Send it!</button>
+    
+    </form>
+
+  </div>
   
-    <!-- email -->
-    <div class="field">
-      <input type="email" name="email" style="border:3px solid #ccff00; margin-bottom: .5em; padding: 0 .75em;" class="input" placeholder="Your Email">
-    </div>
+
+</div>
+
   
-    <!-- message -->
-    <div class="field">
-      <textarea class="textarea" name="message"  placeholder="Spill that tea, fam..."></textarea>
-    </div>
-  
-    <button type="submit" class="btn btn-secondary ml-4">Send it!</button>
-  
-  </form>
+</div>
+

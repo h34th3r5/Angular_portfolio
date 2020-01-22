@@ -19,7 +19,7 @@ export class ContactPageComponent implements OnInit {
 
   processForm() {
     const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
-    alert(allInfo); 
+    alert(allInfo);
   }
 
 }

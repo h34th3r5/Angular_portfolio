@@ -43,6 +43,7 @@ margin-bottom:25px;
 margin-top:10px;
 height:100px;
 resize:none;
+margin-left: 30%;
 }
 input[type="submit"]{
 width:35%;
@@ -62,6 +63,7 @@ input{
 button, input, optgroup, select, textarea {
     font-family: 'PT Sans Narrow', sans-serif !important;
     font-size: 16pt;
+    margin-left: 30%;
 }
 /* -------------------------------------
 CSS for Sidebar (optional)
@@ -69,3 +71,12 @@ CSS for Sidebar (optional)
 div#fugo{
 float:right
 }
+
+.contact-fields {
+    margin-top: 3em;
+}
+
+.help {
+    margin-left: 30%;
+  }
+

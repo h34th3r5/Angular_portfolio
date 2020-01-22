@@ -10,7 +10,12 @@ span {
     font-weight: 500;
 }
 
-h1 {
+.title h1 {
+  font-size: 4em;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.menu {
     color: #777777;
     font-family: 'Monoton', cursive;
     font-weight: 500;
@@ -18,10 +23,11 @@ h1 {
 
 .first {
     opacity: .6;
-    font-size: 4em;
+    font-size: 4.5em;
     padding-left: .25em;
     padding-right: .25em;
   }
+
 .first:hover {
     opacity: 1;
     color: #ccff00;
@@ -75,3 +81,4 @@ h2 {
   a:hover {
     text-decoration: none;
   }
+
