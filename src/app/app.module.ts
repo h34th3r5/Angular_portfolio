@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
 import { FormsModule }   from '@angular/forms';
+import * as AOS from 'aos';
 
 
 
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload', useHash: true}),
     HttpClientModule,
     TeximateModule,
-    FormsModule
+    FormsModule,
+    AOS
   ],
   providers: [],
   bootstrap: [AppComponent]
