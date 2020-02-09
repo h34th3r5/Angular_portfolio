@@ -7,7 +7,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
 import { FormsModule }   from '@angular/forms';
-import * as AOS from 'aos';
+import { AlertModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap';
+import { Title } from '@angular/platform-browser';
+
 
 
 
@@ -52,7 +55,9 @@ const appRoutes: Routes = [
     HttpClientModule,
     TeximateModule,
     FormsModule,
-    AOS
+    AlertModule,
+    ModalModule,
+    Title
   ],
   providers: [],
   bootstrap: [AppComponent]
