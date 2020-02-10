@@ -6,7 +6,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import 'hammerjs';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 
 
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload', useHash: true}),
     HttpClientModule,
     TeximateModule,
-    FormsModule
+    FormsModule,
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
