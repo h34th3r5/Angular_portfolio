@@ -10,7 +10,7 @@
         <a routerLink="/static-design" ><h1 class="pt-5 first hvr-float menu"><span>STATIC</span>DESIGN</h1></a>
         <a routerLink="/web-design"><h1 class="first hvr-float menu"><span>WEB</span>DESIGN</h1></a>
         <a routerLink="/resume"><H1 class="first hvr-float menu">RESUME</H1></a>
-        <a routerLink="/contact"><H1 class="first hvr-float menu">CONTACT</H1></a>
+        <!-- <a routerLink="/contact"><H1 class="first hvr-float menu">CONTACT</H1></a> -->
     </div>
 
     <div class="col-12 ml-4 pt-3">
@@ -19,11 +19,12 @@
     
 
     <div class=" col-12 d-flex flex-row ml-2 pb-4">
-            <a class="px-3" href="https://www.instagram.com/heather.creates.the.world/" (mouseover)="socialName='instagram'"  (mouseout)="socialName='socials__'" target="_blank"  title="instagram" alt="Instagram" ><fa-icon [icon]="faInstagram"></fa-icon></a>
+            <a class="px-3" href="https://www.instagram.com/heather.creates.the.world/" (mouseover)="socialName='instagram'"  (mouseout)="socialName='socials||contact_'" target="_blank"  title="instagram" alt="Instagram" ><fa-icon [icon]="faInstagram"></fa-icon></a>
               
-            <a class="px-3" href="https://www.facebook.com/heatherstumpdesigns/" (mouseover)="socialName='facebook'"  (mouseout)="socialName='socials_'"target="_blank" title="facebook" alt="Facebook"><fa-icon [icon]="faFacebookSquare"></fa-icon></a>
+            <a class="px-3" href="https://www.facebook.com/heatherstumpdesigns/" (mouseover)="socialName='facebook'"  (mouseout)="socialName='socials||contact_'"target="_blank" title="facebook" alt="Facebook"><fa-icon [icon]="faFacebookSquare"></fa-icon></a>
         
-            <a class="px-3" href="https://twitter.com/heatherStumpArt" (mouseover)="socialName='twitter'"  (mouseout)="socialName='socials_'"target="_blank" title="twitter" alt="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
+            <a class="px-3" href="https://twitter.com/heatherStumpArt" (mouseover)="socialName='twitter'"  (mouseout)="socialName='socials||contact_'"target="_blank" title="twitter" alt="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
+            <a class="px-3" href="mailto:heatherstump@hrsphotodesign.com" (mouseover)="socialName='email'"  (mouseout)="socialName='socials||contact_'"target="_blank" title="email" alt="Email"><fa-icon [icon]="faEnvelope"></fa-icon></a>
     </div>            
     
 </div>
