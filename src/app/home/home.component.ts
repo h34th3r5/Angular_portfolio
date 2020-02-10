@@ -10,7 +10,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent implements OnInit {
 
-  socialName = 'socials||contact_';
+  socialName = 'social||contact_';
   faInstagram = faInstagram;
   faFacebookSquare = faFacebookSquare;
   faTwitter = faTwitter;
