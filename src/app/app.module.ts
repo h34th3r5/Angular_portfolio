@@ -7,8 +7,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
 import { FormsModule } from '@angular/forms';
-import 'hammerjs';
 import { NgxGalleryModule } from 'ngx-gallery';
+
 
 
 
