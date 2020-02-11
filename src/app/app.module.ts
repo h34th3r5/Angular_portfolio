@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -20,6 +20,8 @@ import { HomeComponent } from './home/home.component';
 import { StaticDesignComponent } from './static-design/static-design.component';
 import { WebDevComponent } from './web-dev/web-dev.component';
 import { ResumeComponent } from './resume/resume.component';
+import { StaticDesignService } from './static-design/static-design.service';
+import { StaticDesignCardComponent } from './static-design/static-design-card/static-design-card.component';
 
 
 const appRoutes: Routes = [
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
     HomeComponent,
     StaticDesignComponent,
     WebDevComponent,
-    ResumeComponent
+    ResumeComponent,
+    StaticDesignCardComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,7 @@ const appRoutes: Routes = [
     FormsModule,
     NgxGalleryModule
   ],
-  providers: [],
+  providers: [StaticDesignService, Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

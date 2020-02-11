@@ -1,1 +1,13 @@
-<p>static-design works!</p>
+<app-header></app-header>
+
+<div class="row">
+        <div class="col-12 p-0">
+                <app-static-design-card *ngFor = "let album of staticDesignPhotos" class="logo-photo"
+                [album]= 'album'
+                [label]='label'>   
+                </app-static-design-card>
+        </div>
+</div>
+
+
+
