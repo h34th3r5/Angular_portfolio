@@ -29,7 +29,8 @@ export class StaticDesignCardComponent implements OnInit {
         imageDescription: false,
         previewDescription: true,
         thumbnailsSwipe: true,
-        thumbnails: false
+        thumbnails: false,
+        imageArrows: true
       },
       // max-width 800
       {
@@ -40,9 +41,20 @@ export class StaticDesignCardComponent implements OnInit {
         thumbnailsPercent: 20,
         thumbnailsMargin: 20,
         thumbnailMargin: 20,
-        previewDescription: false,
+        previewDescription: true,
         thumbnailsSwipe: true
       },
+      {
+        breakpoint: 450, 
+        width: '100%',
+        height: '100px', 
+        thumbnailsPercent: 100
+      },
+      {
+        breakpoint: 770, 
+        width: '100%',
+        height: '100px'
+      }
 
   ];
   }

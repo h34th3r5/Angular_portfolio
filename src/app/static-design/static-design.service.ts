@@ -20,6 +20,41 @@ galleryStaticImages = {
     big: '../assets/img/logos/sparkle_lounge_black.jpg',
     description: 'Web logo for Sparkle Lounge Guitars, St. Louis, MO'
 }],
+  snowboards: [{
+    label: 'Snowboard: Bubble',
+    small: '../assets/img/logos/bubblebothsides.png',
+    medium: '../assets/img/logos/bubblebothsides.png',
+    big: '../assets/img/logos/bubblebothsides.png',
+    description: 'Snowboard concept design: Bubble'
+  },
+  {
+    label: 'Snowboard: Crystal',
+    small: '../assets/img/logos/crystalsnowmockup.png',
+    medium: '../assets/img/logos/crystalsnowmockup.png',
+    big: '../assets/img/logos/crystalsnowmockup.png',
+    description: 'Snowboard concept design: Crystal'
+  },
+  {
+    label: 'Snowboard: Right/Left',
+    small: '../assets/img/logos/rightleftgoofyregmockup.png',
+    medium: '../assets/img/logos/rightleftgoofyregmockup.png',
+    big: '../assets/img/logos/rightleftgoofyregmockup.png',
+    description: 'Snowboard concept design: Right/Left'
+  },
+  {
+    label: 'Snowboard: Swirl',
+    small: '../assets/img/logos/swirlmockup.png',
+    medium: '../assets/img/logos/swirlmockup.png',
+    big: '../assets/img/logos/swirlmockup.png',
+    description: 'Snowboard concept design: Swirl'
+  },
+  {
+    label: 'Snowboard: Girl Sketch',
+    small: '../assets/img/logos/girlsketchmockup.png',
+    medium: '../assets/img/logos/girlsketchmockup.png',
+    big: '../assets/img/logos/girlsketchmockup.png',
+    description: 'Snowboard concept design: Girl Sketch'
+  }]
 };
 
   constructor() { }

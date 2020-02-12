@@ -22,6 +22,7 @@ import { WebDevComponent } from './web-dev/web-dev.component';
 import { ResumeComponent } from './resume/resume.component';
 import { StaticDesignService } from './static-design/static-design.service';
 import { StaticDesignCardComponent } from './static-design/static-design-card/static-design-card.component';
+import { HoverDirective } from './static-design/hover.directive';
 
 
 const appRoutes: Routes = [
@@ -44,7 +45,8 @@ const appRoutes: Routes = [
     StaticDesignComponent,
     WebDevComponent,
     ResumeComponent,
-    StaticDesignCardComponent
+    StaticDesignCardComponent,
+    HoverDirective
   ],
   imports: [
     BrowserModule,

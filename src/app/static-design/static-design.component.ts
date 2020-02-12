@@ -35,7 +35,8 @@ export class StaticDesignComponent implements OnInit {
         imageAnimation: NgxGalleryAnimation.Slide,
         previewCloseOnClick: true,
         previewCloseOnEsc: true,
-        imageDescription: false
+        imageDescription: false,
+        thumbnails: true
       },
       // max-width 800
       {
