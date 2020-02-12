@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TeximateModule } from 'ngx-teximate';
 import { FormsModule } from '@angular/forms';
 import { NgxGalleryModule } from 'ngx-gallery';
+import 'hammerjs';
 
 
 

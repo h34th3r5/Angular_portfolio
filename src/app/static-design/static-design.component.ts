@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { StaticDesignService } from './static-design.service';
 import { Title } from '@angular/platform-browser';
-import { NgxGalleryOptions, NgxGalleryAnimation } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryAnimation, NgxGalleryAction } from 'ngx-gallery';
 
 @Component({
   selector: 'app-static-design',

@@ -10,13 +10,13 @@ export class StaticDesignCardComponent implements OnInit {
   
  galleryOptions: NgxGalleryOptions[];
   @Input() album: NgxGalleryImage[];
-  @Input() label: string;
+
 
   constructor() { }
 
   ngOnInit()  {
 
-    console.log(this.album);
+
     this.galleryOptions = [
       {
         width: '100%',
@@ -29,7 +29,7 @@ export class StaticDesignCardComponent implements OnInit {
         previewDescription: true,
         thumbnailsSwipe: true,
         thumbnails: true,
-        imageArrows: true
+        previewArrows: true
       },
       // max-width 800
       {
@@ -41,7 +41,9 @@ export class StaticDesignCardComponent implements OnInit {
         thumbnailsMargin: 20,
         thumbnailMargin: 20,
         previewDescription: true,
-        thumbnailsSwipe: true
+        thumbnailsSwipe: true,
+        thumbnails: true,
+        previewArrows: true
       },
       {
         breakpoint: 450, 
