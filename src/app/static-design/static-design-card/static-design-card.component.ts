@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
+import 'hammerjs';
 
 @Component({
   selector: 'app-static-design-card',
@@ -25,11 +26,12 @@ export class StaticDesignCardComponent implements OnInit {
         imageAnimation: NgxGalleryAnimation.Slide,
         previewCloseOnClick: true,
         previewCloseOnEsc: true,
-        imageDescription: true,
+        imageDescription: false,
         previewDescription: true,
         thumbnailsSwipe: true,
         thumbnails: true,
-        previewArrows: true
+        arrowPrevIcon: 'fa fa-arrow-circle-left',
+        arrowNextIcon: 'fa fa-arrow-circle-right'
       },
       // max-width 800
       {
@@ -43,7 +45,8 @@ export class StaticDesignCardComponent implements OnInit {
         previewDescription: true,
         thumbnailsSwipe: true,
         thumbnails: true,
-        previewArrows: true
+        previewArrows: true,
+        imageAnimation: NgxGalleryAnimation.Slide
       },
       {
         breakpoint: 450, 
