@@ -1,11 +1,9 @@
 <app-header></app-header>
 
 <section class="row">
-        <div class="col-12 mx-sm-3 mx-xs-3 mx-md-3">
-                <app-static-design-card *ngFor = "let album of staticDesignPhotos" class="logo-photo"
-                [album]= 'album'>   
+                <app-static-design-card *ngFor = "let arr of staticDesignPhotos" class="col-4"
+                [album]= arr>   
                 </app-static-design-card>
-        </div>
 </section>
 
 

@@ -7,29 +7,28 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
   styleUrls: ['./static-design-card.component.css']
 })
 export class StaticDesignCardComponent implements OnInit {
-
+  
  galleryOptions: NgxGalleryOptions[];
   @Input() album: NgxGalleryImage[];
   @Input() label: string;
-
-
 
   constructor() { }
 
   ngOnInit()  {
 
+    console.log(this.album);
     this.galleryOptions = [
       {
         width: '100%',
-        height: '100px',
+        height: '300px',
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Slide,
         previewCloseOnClick: true,
         previewCloseOnEsc: true,
-        imageDescription: false,
+        imageDescription: true,
         previewDescription: true,
         thumbnailsSwipe: true,
-        thumbnails: false,
+        thumbnails: true,
         imageArrows: true
       },
       // max-width 800

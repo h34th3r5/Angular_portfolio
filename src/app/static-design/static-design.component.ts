@@ -30,13 +30,12 @@ export class StaticDesignComponent implements OnInit {
     this.galleryOptions = [
       {
         width: '100%',
-        height: '400px',
+        height: '800px',
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Slide,
         previewCloseOnClick: true,
         previewCloseOnEsc: true,
-        imageDescription: false,
-        thumbnails: true
+        imageDescription: false
       },
       // max-width 800
       {
