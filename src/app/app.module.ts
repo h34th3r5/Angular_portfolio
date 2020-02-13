@@ -9,6 +9,7 @@ import { TeximateModule } from 'ngx-teximate';
 import { FormsModule } from '@angular/forms';
 import { NgxGalleryModule } from 'ngx-gallery';
 import 'hammerjs';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 
 
@@ -55,10 +56,12 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     // tslint:disable-next-line: max-line-length
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'top', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload', useHash: true}),
+    AnimateOnScrollModule.forRoot(),
     HttpClientModule,
     TeximateModule,
     FormsModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    AnimateOnScrollModule
   ],
   providers: [StaticDesignService, Title],
   bootstrap: [AppComponent]
