@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgsRevealService } from 'ngx-scrollreveal';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-resume',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent implements OnInit {
+
+  faGithub = faGithub;
 
   constructor() { }
 

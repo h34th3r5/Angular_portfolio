@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { TextAnimation } from 'ngx-teximate';
+import { slideInUp } from 'ng-animate';
+import { NgsRevealService } from 'ngx-scrollreveal';
 
 @Component({
   selector: 'app-web-dev',
@@ -7,7 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebDevComponent implements OnInit {
 
-  constructor() { }
+text = '2020: The Year of Angular';
+
+enterAnimation: TextAnimation = {
+  animation: slideInUp,
+  delay: 300,
+  type: 'letter'
+}
+  afterRevealSubscription: any;
+  constructor(private revealService: NgsRevealService) { }
 
   ngOnInit() {
   }
