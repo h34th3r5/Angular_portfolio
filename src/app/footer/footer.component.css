@@ -19,6 +19,7 @@ fa-icon:hover {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-center:before {
   content: "";
   position: absolute;
@@ -35,7 +36,10 @@ fa-icon:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
@@ -50,6 +54,7 @@ fa-icon:hover {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-right:before {
   content: "";
   position: absolute;
@@ -66,13 +71,16 @@ fa-icon:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
+
+.hvr-underline-from-right:hover:before,
+.hvr-underline-from-right:focus:before,
+.hvr-underline-from-right:active:before {
   left: 0;
 }
 
 
 footer li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 footer {
@@ -82,8 +90,8 @@ footer {
 }
 
 a {
-    padding: .5em;
-    color: white;
-    vertical-align: middle;
-    text-decoration: none;
+  padding: .5em;
+  color: white;
+  vertical-align: middle;
+  text-decoration: none;
 }
