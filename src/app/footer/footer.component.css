@@ -76,16 +76,14 @@ footer li {
 }
 
 footer {
-    position: relative;
-  top: auto;
-  bottom: 0;
+  position: fixed;
   left: 0;
   width: 100%;
-  border-top: 2px solid #ccff00;
 }
 
 a {
     padding: .5em;
     color: white;
     vertical-align: middle;
+    text-decoration: none;
 }

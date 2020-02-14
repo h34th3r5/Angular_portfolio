@@ -2,9 +2,9 @@
 
 <div class="container">
     <div class="row">
-        <div class="item col-12"  [ngsReveal]="{ reset: true}" style="background-color: white; font-family: serif; color: black; padding: 2em;">
-            <h1>2018: The Year of HTML and CSS</h1>
-            <ul>
+        <div class="item col-12" [ngsReveal]="{ reset: true}" >
+            <h1 class="col-12 text-center" style="background-color: white; font-family: serif;  color: black;">2018: The Year of HTML and CSS</h1>
+            <ul style="padding: 2em;" style="background-color: white; font-family: serif;  color: black;">
                 <li>I enrolled in LaunchCode's CoderGirl program in the winter of 2018 and began learning how to construct the bones of a website</li>
                 <li>I spent several weeks fighting with CSS, but now it's my favorite language</li>
                 <li>I remember how excited I was to see any type of code display on the screen!</li>
@@ -61,13 +61,13 @@
             </ul>
         
         </div>
-        <div class="item text-center" [ngsReveal]="{ reset: true}">
-            <button type="button" class="btn"><a routerLink="/web-design"><fa-icon [icon]="faGithub"></fa-icon> Click here for full resume and repo links <fa-icon [icon]="faGithub"></fa-icon></a></button>
+        <div class="item text-center col-12" [ngsReveal]="{ reset: true}">
+            <button type="button" class="btn"><a routerLink="/web-design"><fa-icon [icon]="faGithub"></fa-icon> Click here for full resume and repo links </a></button>
         </div>
     </div>
 
 </div>
 
- <app-footer></app-footer>   
+ <app-footer class="item" [ngsReveal]="{ reset: true }"></app-footer>   
 
 

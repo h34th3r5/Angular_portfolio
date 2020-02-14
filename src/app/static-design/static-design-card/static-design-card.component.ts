@@ -49,17 +49,11 @@ export class StaticDesignCardComponent implements OnInit {
         imageAnimation: NgxGalleryAnimation.Slide
       },
       {
-        breakpoint: 450, 
+        breakpoint: 700, 
         width: '100%',
-        height: '100px', 
+        height: '300px', 
         thumbnailsPercent: 100
-      },
-      {
-        breakpoint: 770, 
-        width: '100%',
-        height: '100px'
       }
-
   ];
   }
 

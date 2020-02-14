@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
 import { faInstagram, faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
   faFacebookSquare = faFacebookSquare;
   faTwitter = faTwitter;
   faEnvelope = faEnvelope;
+  faHome = faHome;
 
   collapsed = true;
 
