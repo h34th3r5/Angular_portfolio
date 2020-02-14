@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { NgxGalleryModule } from 'ngx-gallery';
 import 'hammerjs';
 import {NgsRevealModule} from 'ngx-scrollreveal';
-
+import {AngularFireModule } from '@angular/fire';
 
 
 
@@ -38,6 +38,17 @@ const appRoutes: Routes = [
 ];
 
 
+export const firebaseConfig = {
+  apiKey: 'AIzaSyDtpPmBAgevPrOOaQ1ESkbYl4wAeJmPrcA',
+    authDomain: 'heather-stump-art-porfolio.firebaseapp.com',
+    databaseURL: 'https://heather-stump-art-porfolio.firebaseio.com',
+    projectId: 'heather-stump-art-porfolio',
+    storageBucket: 'heather-stump-art-porfolio.appspot.com',
+    messagingSenderId: '731356873095',
+    appId: '1:731356873095:web:f8c6642be311cecc195322',
+    measurementId: 'G-JMKP58G4HX'
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +72,8 @@ const appRoutes: Routes = [
     TeximateModule,
     FormsModule,
     NgxGalleryModule,
-    NgsRevealModule
+    NgsRevealModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [StaticDesignService, Title],
   bootstrap: [AppComponent]
