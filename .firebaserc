@@ -5,7 +5,7 @@
   "targets": {
     "heather-stump-art-porfolio": {
       "hosting": {
-        "angularPorfolio": [
+        "dist/angularPorfolio": [
           "heather-stump-art-porfolio"
         ]
       }

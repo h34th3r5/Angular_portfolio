@@ -16,40 +16,10 @@ span {
     font-weight: 500;
 }
 
-@media screen and (max-width: 1050px) {
-  .first {
-    font-size: 100%;
-  }
-}
-
-@media screen and (max-width: 1370px) {
-  .first {
-    font-size: 50%;
-  }
-}
-
-
-/* @media screen and (min-width: 750px) and (max-width: 1030) {
-  .menu-span {
-    font-size:em;
-  }
-  .socials  {
-    font-size: 1em;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 360px) and (max-width: 820) {
-  .menu {
-    font-size: 10em;
-  }
-} */
-
 .first {
     opacity: .6;
     padding-left: .25em;
     padding-right: .25em;
-    font-size: 400%;
   }
 
 .first:hover {
