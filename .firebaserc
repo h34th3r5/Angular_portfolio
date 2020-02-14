@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "heather-stump-art-porfolio"
+  },
+  "targets": {
+    "heather-stump-art-porfolio": {
+      "hosting": {
+        "angularPorfolio": [
+          "heather-stump-art-porfolio"
+        ]
+      }
+    }
+  }
+}

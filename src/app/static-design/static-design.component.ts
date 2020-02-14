@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { StaticDesignService } from './static-design.service';
 import { Title } from '@angular/platform-browser';
 import { NgxGalleryOptions, NgxGalleryAnimation, NgxGalleryAction } from 'ngx-gallery';
+import { NgsRevealService } from 'ngx-scrollreveal';
 
 @Component({
   selector: 'app-static-design',
@@ -20,7 +21,7 @@ export class StaticDesignComponent implements OnInit {
   }
 
 
-  constructor(staticDesign: StaticDesignService, private titleService: Title) { 
+  constructor(staticDesign: StaticDesignService, private titleService: Title, private revealService: NgsRevealService) { 
     this.staticDesignPhotos = staticDesign.getAllAlbums();
   }
 

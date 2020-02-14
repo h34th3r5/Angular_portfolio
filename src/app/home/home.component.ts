@@ -3,6 +3,7 @@ import { faInstagram, faFacebookSquare, faTwitter } from '@fortawesome/free-bran
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

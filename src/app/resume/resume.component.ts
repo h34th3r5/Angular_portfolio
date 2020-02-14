@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgsRevealService } from 'ngx-scrollreveal';
+import { Title } from '@angular/platform-browser';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -11,9 +11,14 @@ export class ResumeComponent implements OnInit {
 
   faGithub = faGithub;
 
-  constructor() { }
+  public setTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
+  }
+
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.setTitle('Resume | Heather Stump Art');
   }
 
 }
