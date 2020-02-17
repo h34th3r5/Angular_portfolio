@@ -17,7 +17,7 @@ public setTitle(newTitle: string) {
 }
 
   ngOnInit() {
-    this.setTitle('Web Design | Heather Stump Art');
+    this.setTitle('Web Design | Heather Stump Art & Design');
   }
 
 }

@@ -26,7 +26,7 @@ export class StaticDesignComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.setTitle('Static Design | Heather Stump Art');
+    this.setTitle('Static Design | Heather Stump Art & Design');
 
     this.galleryOptions = [
       {
