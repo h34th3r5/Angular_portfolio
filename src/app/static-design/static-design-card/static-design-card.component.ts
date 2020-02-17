@@ -35,11 +35,11 @@ export class StaticDesignCardComponent implements OnInit {
       },
       // max-width 800
       {
-        breakpoint: 800,
+        breakpoint: 480,
         width: '100%',
         height: '600px',
-        imagePercent: 80,
-        thumbnailsPercent: 20,
+        imagePercent: 100,
+        thumbnailsPercent: 10,
         thumbnailsMargin: 20,
         thumbnailMargin: 20,
         previewDescription: true,
