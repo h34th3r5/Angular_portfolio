@@ -20,6 +20,7 @@ span {
     opacity: .6;
     padding-left: .25em;
     padding-right: .25em;
+    font-size: 50pt;
   }
 
 .first:hover {
