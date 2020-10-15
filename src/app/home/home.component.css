@@ -19,7 +19,6 @@ span {
 
 .first {
     opacity: .6;
-    font-size: 2.5em;
   }
 
 .first:hover {
@@ -30,7 +29,7 @@ span {
 h2 {
     color: white;
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 40pt;
+    font-size: 150%;
 }
 
 /* Float */
